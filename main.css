@@ -1,0 +1,182 @@
+/* css rule */
+/* selectors */
+/* declaration block */
+/* declaration property: value */
+
+/* ELEMENT SELECTOR */
+/* h1{
+    color:blue;
+}
+
+h2{
+    color: red;
+}
+
+p{
+    color:darkgrey;
+} */
+
+
+/* SELECTOR GROUPING */
+
+/* body{
+    color: blue;
+}
+
+h1,h2{
+    color:red;
+} */
+
+
+/* ID */
+
+/* #header{
+    color:blueviolet;
+    background: black;
+}
+
+#footer{
+    color:blue;
+    background:grey;
+} */
+
+/* CLASS SELECTORS */
+
+/* .green{
+    color: green;
+}
+
+.red{
+    color:red;
+}
+
+
+
+span{
+    text-transform: uppercase;
+} */
+
+
+
+
+
+/* INHERITANCE */
+/* body{
+    color:red;
+    font-family: monospace;
+    line-height: 1.5em;
+}
+
+div{
+    color: blue;
+    border: 3px solid black;
+}
+
+h2{
+    color: green;
+} */
+
+
+
+/* LAST RULE AND SPECIFICITY/UNIVERSAL SELECTOR*    */
+/* 
+p{
+    color:blue;
+}
+
+p{
+    color: red;
+} */
+
+/* .red{
+    color: red;
+}
+
+p{
+    color: blue;
+} */
+
+/* universal selector has the least amount of specificity */
+
+/* *{
+    color: blue;
+} */
+
+
+
+/* COLOR PROPERTIES
+COLOR BACKGROUND-COLOR */
+
+/* #first{
+    color:lightblue;
+    background-color: bisque;
+}
+
+#second{
+    color:brown;
+    background:yellow;
+} */
+
+
+/* RGB RED GREEN BLUE 0-255 */
+/* #first {
+    color: rgb(255,0,0);
+    background-color: rgb(0,0,0);
+}
+
+#second {
+    color: rgb(0,255,0);
+    background: rgb(255,255,255);
+}
+
+#third{
+    color:rgb(0,0,255);
+    background: rgb(100,100,100);
+}
+
+body{
+    background: rgb(100,34,210) 
+}*/
+
+
+
+/* RGBA 0-1-OPACITY/TRANSPARENCY */
+/* #first{
+    color:rgb(100,123,56);
+    background: rgba(0,0,0,0.5);
+}
+
+#second {
+    color: rgb(45,10,34);
+    background: rgba(0, 0, 0, 0.25);
+}
+
+#third {
+    color: rgb(255, 0, 0);
+    background: rgba(0, 0, 0, 0);
+}
+
+#fourth {
+    color: rgb(0, 0, 255);
+    background: rgba(0, 0, 0, 1);
+}
+/* you can use this as an overlay for a picture (opacity) */
+/* body{
+    background: rgba(10,10,200, 0.3);
+} */
+
+/* HSL
+HEX VALUES #RRGGBB
+123456789 A(10) B(11) C(12) D(13) E(14) F(15)
+          10 11 12 13 14 15
+          #FF0000 - RED
+          #00FF00 - GREEN */
+
+/* #first {
+    color: #ff0000;
+    background: #000;
+} */
+
+
+
+/* FONT-SIZE, WIDTH, HEIGHT, PIXELS(1pixel=1dot on the screen) */
