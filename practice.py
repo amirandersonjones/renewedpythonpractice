@@ -23,13 +23,13 @@
 # elif temperature == 20:
 #     print("Gee Willkers" + name + ", why do people live in Minnesota")
 
-# else: 
+# else:
 #     print("This line is used to catch errors")
 
 # count_list = list(range(1,27, 2))
 # print(count_list)
 
-animals = ["dog", "cat", "snake", "goat"]
+# animals = ["dog", "cat", "snake", "goat"]
 # print(len(animals))
 
 # for animal in animals:
@@ -52,7 +52,7 @@ animals = ["dog", "cat", "snake", "goat"]
 
 # list = ["thing1","thing2","thing3"]
 # for item in list:
-#     print(f" This {item} is in my list") 
+#     print(f" This {item} is in my list")
 
 # portList= ["Interface g0/0", "Interface, g0/1", "Interface g0/2"]
 # deviceList = ["Catalyst 3650", "Catalyst 3750", "Catalyst 3850"]
@@ -100,3 +100,33 @@ animals = ["dog", "cat", "snake", "goat"]
 #     login = input("Enter a login name")
 
 # print(f"Your login name is {login}")
+
+# check = bool(2+1==2)
+# print(check)
+
+# smoresIngredients = ["Chocolate", "Marshmellows", "Graham Crackers"]
+# for i in range(len(smoresIngredients)):
+#     print(i, smoresIngredients[i], len(smoresIngredients))
+
+
+# ----iterate through the pizzalist and if the value is cheese add it to the liked_list and then count how many cheese pizzas are liked.
+
+# pizzalist = ["sausage", "sausage", "pepperoni", "cheese", "cheese"]
+
+# liked_list = []
+# amount_cheese = 0
+
+# for pizza in pizzalist:
+#     if pizza == "cheese":
+#         liked_list.append(pizza)
+#         amount_cheese +=1
+# print(f"{liked_list}, the amount of cheese is: {amount_cheese}")
+
+
+# pythonList = ["name", 8490, 57, 9]
+# new_list = pythonList[::-1]
+# print(new_list)
+
+# tenList = ["zero", "one", "two", "three", "four","five", "six", "seven", "eight", "nine", "ten"]
+# print(len(tenList))
+# print(tenList[len(tenList)-1])
