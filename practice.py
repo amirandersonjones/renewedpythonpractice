@@ -1,6 +1,8 @@
 # temperature = 20
 # name = "Batman"
 
+# -----IF,ELIF----
+
 # if temperature > 30:
 #     print("It's not that bad outside")
 #     if temperature < 50:
@@ -29,6 +31,7 @@
 # count_list = list(range(1,27, 2))
 # print(count_list)
 
+# ------FOR LOOPS----
 # animals = ["dog", "cat", "snake", "goat"]
 # print(len(animals))
 
@@ -84,6 +87,8 @@
 
 # print("end")
 
+# ------WHILE LOOPS-------
+
 # number = 5
 
 # while number < 20:
@@ -127,6 +132,106 @@
 # new_list = pythonList[::-1]
 # print(new_list)
 
-# tenList = ["zero", "one", "two", "three", "four","five", "six", "seven", "eight", "nine", "ten"]
+
+# tenList = ["zero", "one", "two", "three", "four",
+#            "five", "six", "seven", "eight", "nine", "ten"]
 # print(len(tenList))
 # print(tenList[len(tenList)-1])
+
+# ------LIST SLICING----
+# print(tenList[1:7])
+# print(tenList[:5])
+# print(tenList[5:])
+
+# print(tenList[0:10:2])
+# print(tenList[0::2])
+
+# print(tenList[4::2])
+
+# more_numbers = ["eleven", "twelve", "thirteen", "fourteen", "fifteen"]
+
+# tenList.extend(more_numbers)
+# print(tenList)
+# tenList.insert(0, "zeroth")
+# print(tenList)
+
+# numbers_list=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# print(min(numbers_list))
+# print(max(numbers_list))
+# numbers_list.pop()
+# print(numbers_list)
+# numbers_list.pop(0)
+# print(numbers_list)
+# numbers_list.remove(5)
+# print(numbers_list)
+
+# numbers_list=[1, 2, 3, 4, 5, 10, 7, 8, 9, 6]
+# numbers_list.sort()
+# print(numbers_list)
+
+# ----TUPLES, WHY USE THEM???------
+# 1.) tuples are not Mutable
+# 2.) data Integrity
+# 3.) key-value pairs
+
+# smoresIngredients= ("Chocolate", "Marshmellows", "Graham Crackers")
+# print(len(smoresIngredients))
+# print(min(smoresIngredients))
+# print(max(smoresIngredients))
+# moreIngredients=("Mushrooms")
+# smoresIngredients.append(moreIngredients) #tuples are not mutable so we can't change them, will get an error message.
+
+# ----DICTIONARIES---
+# an unordered list of key-value pairs
+
+# dictExample= {"key":"Value","key2":"Value2", "key3":"Value3"}
+# print(dictExample['key'])
+
+# myDict = {
+#     "name": "Barry",
+#     "species": "bird",
+#     "habitat": "tree"
+# }
+
+# print(myDict["name"])
+
+# mynewDict =[
+#     {"name": "Barry", "species": "bird", "habitat": "tree"},
+#     {"name": "Hope", "species": "dog", "habitat": "house"},
+#     {"name": "Mosses", "species": "cat", "habitat": "house"}
+
+# ]
+
+# print(mynewDict[1])
+# print(mynewDict[1]["species"])
+
+# print(myDict["name"])
+
+# ----ADDING KEYS TO A DICTIONARY----
+
+animalDict = {
+    "name": "Hope",
+    "species": "dog",
+    "habitat": "house"
+}
+print(animalDict)
+print(id(animalDict))
+
+animalDict["age"] = 1
+print(animalDict)
+
+# -----OBJECT ORIENTED PROGRAMMING-----
+
+# class Student:
+#     pass
+
+# student1 = Student()
+# student1.name = "Amir" #this is an attribute
+# student1.grade = 100 #this is an attribute
+
+# student2 = Student()
+# student2.name = "Kellie"  # this is an attribute
+# student2.grade = 110  # this is an attribute
+
+# print(student1.name)
+# print(student2.grade)
