@@ -348,7 +348,7 @@ border */
     
 } */
 
-p{
+/* p{ */
     /* background: blue; */
     /* padding shortcuts */
     /* padding: 20px; */
@@ -358,7 +358,7 @@ p{
     /* margin: 100px; */
     /* shortcut to border:  */
     /* border: 13px solid yellowgreen */
-} 
+/* }  */
 
 /* border radius
 negative margin */
@@ -391,4 +391,138 @@ margin: 0 20px;
     outline-style: solid;
     outline-color: #222;
     outline-offset: -10px;
+} */
+
+/* Defalut Display Property */
+/* Block: Always starts a new line and takes full width */
+/* Inline: Does not start a new line and only takes up as much as content space as necessary */
+
+/* .block {
+    background: blue;
+    color: white;
+    
+}
+
+.inline {
+    background: red;
+    color: white;
+    display: block;
+} */
+
+/* -----Horizontal Centering---- */
+/* body{
+    text-align: center;
+}
+
+block elements need to be moved horizontally using margin and inline elements move horizontally using text align.
+
+.block {
+    background: blue;
+    color: white;
+    width: 150px;
+    margin: 0 auto;
+
+}
+
+.inline { */
+    /* background: red;
+    color: white;
+
+} 
+
+/* Mobile Navbar
+list-style-type: style type property
+descendant selectors */
+/* 
+div{
+    background: blue;
+    color: azure;
+    padding: 20px;
+    margin: 20px;
+} */
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul li{
+    list-style-type: none;
+} */
+
+ /* display: block; need to make our links a block element instead of inline element(default) so it will be able to use padding and margin */
+/* 
+ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    background: black;
+    color: #f15025;
+    display: block; 
+    padding: 10px 10px;
+  
+} */
+
+/* ------inline block----- */
+/* a{
+    font-size: 60px;
+    background: red;
+    margin: 10px;
+    display: inline-block;
+} */
+
+/* .box-1, 
+.box-2, 
+.box-3{
+    width: 200px;
+    height: 200px;
+    color: white; */
+/* } */
+
+/* .box-1{
+    background:red;
+    padding: 20px;
+    box-sizing: border-box;
+   
+}
+
+.box-2 {
+    background: blue;
+  
+}
+
+.box-3 {
+    background: green;
+    padding: 20px;
+} */
+
+/* display:none */
+/* opacity: 0-1
+visibility:hidden; */
+
+/* div {
+    background: blue;
+    margin: 10px;
+    color:azure;
+}
+
+.none {
+    display: none;
+}
+
+.opacity-0{
+    opacity: 0;
+}
+
+.opacity-5 {
+    opacity: 0.5;
+}
+
+.visibility{
+    visibility: hidden;
 } */

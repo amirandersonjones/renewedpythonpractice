@@ -209,16 +209,66 @@
 
 # ----ADDING KEYS TO A DICTIONARY----
 
-animalDict = {
-    "name": "Hope",
-    "species": "dog",
-    "habitat": "house"
-}
-print(animalDict)
-print(id(animalDict))
+# animalDict = {
+#     "name": "Hope",
+#     "species": "dog",
+#     "habitat": "house"
+# }
+# print(animalDict)
+# print(id(animalDict))
 
-animalDict["age"] = 1
-print(animalDict)
+# animalDict["age"] = 1 #adding age to animalDict
+# print(animalDict)
+# print(id(animalDict))
+
+# if we use animalDict.get("age", "Error wrong input"), if we make a mistake it will return None and continue to run our program instead of crashing.
+
+# ----REMOVING KEYS FROM DICTIONARY-----
+
+# animalDict = {
+#         "name": "Hope",
+#         "species": "dog",
+#         "habitat": "house",
+#         "age": 1
+#     }
+# print(animalDict)
+
+# del animalDict["age"]
+# print(animalDict)
+
+# friendDict = {
+#     "friend1": "Kellie",
+#     "friend2": "Mary",
+#     "friend3": "Gussie",
+#     "friend4": "Billie"
+# }
+
+# print(friendDict)
+# popped_friend = friendDict.pop("friend3")
+# print(friendDict)
+
+
+# animalDict = {
+#         "name": "Hope",
+#         "species": "dog",
+#         "habitat": "house",
+#         "age": 1
+#     }
+
+# -----get the keys from the dictionary---
+# print(animalDict.keys())
+
+# -------turn the keys of a dictionary into a list----
+# animaldictkeys = list(animalDict.keys())
+# print(animaldictkeys)
+# print(animaldictkeys[2])
+
+# -----get the values from the dictionary---
+# print(animalDict.values())
+# animaldictvalues = list(animalDict.values())
+# print(animaldictvalues)
+# print(animaldictvalues[3])
+
 
 # -----OBJECT ORIENTED PROGRAMMING-----
 
@@ -235,3 +285,180 @@ print(animalDict)
 
 # print(student1.name)
 # print(student2.grade)
+
+
+animalDict = {
+    "name": "Hope",
+            "species": "dog",
+            "habitat": "house",
+            "age": 1
+}
+
+# print(animalDict.keys())
+
+# listanimaldict = list(animalDict.keys())
+# print(listanimaldict)
+# print(listanimaldict[2])
+# valuelist = list(animalDict.values())
+# print(valuelist)
+
+# print(animalDict.items())
+# animalList = list(animalDict.items())
+# print(animalList[2])
+# print(animalList[2][1])
+
+# ITERATING OVER DICTIONARIES
+# animalDict = {
+#     "name": "Hope",
+#     "species": "dog",
+#     "habitat": "house",
+#     "age": 1,
+#     "weight": "20lbs"
+# }
+
+# for printoutkeys in animalDict.keys():
+#     print(printoutkeys)
+
+# for printoutvalues in animalDict.values():
+#     print(printoutvalues)
+
+# for item in animalDict.items():
+#     print(item)
+
+# for k,v in animalDict.items():
+#     print(k)
+
+# for key, value in animalDict.items():
+#     print(f"The key is {key}, the value is {value}")
+
+# for key in sorted(animalDict.keys()):
+#     print(key)
+
+# ----COMBINING 2 DICTIONARIES-----
+# pizzaPrices = {"Jacks":4, "Digiorno": 7, "Red Baron":6}
+# beerPrices= {"Paulaner":12, "Heineken":10, "Blue Moon": 8}
+# pizzBeerList = {**pizzaPrices, **beerPrices}
+# print(pizzBeerList)
+
+# -------SETS---------
+# 1.) sets are unordered
+# 2.) unique
+# 3.) mutable
+# 4.) there are frozen sets if we don't want them changed {a,b,c}
+
+# deviceName = {"Cisco", "Aruba", "CiscoXE"}
+# print(deviceName, type(deviceName))
+
+# ingredientList = {"hot dogs", "burgers", "buns"}
+# print(id(ingredientList))
+
+# ingredientList.add("mustard")
+# print(ingredientList)
+# print(id(ingredientList))
+
+# ingredientList.remove("mustard")
+# print(ingredientList)
+
+# ingredientList.pop()
+# print(ingredientList)
+
+# numberSet = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+# numberSet.pop()
+# print(numberSet)
+# numberSet.pop()
+# print(numberSet)
+# numberSet.pop()
+# print(numberSet)
+
+
+# european_floor = input("What is the number of the european floor?: ")
+# us_floor = int(european_floor) + 1
+# print(f'The european floor you entered was {european_floor}, That is equal to us floor {us_floor}')
+
+# ingredientList1 = {'Marshmellow', 'Chocolate', 'Graham Crackers'}
+# ingredientList1.add('Roast')
+# print(ingredientList1)
+# ingredientList1.remove('Roast')
+# print(ingredientList1)
+
+# ingredientList1 = {'Marshmellow', 'Chocolate', 'Graham Crackers'}
+# ingredientList2 = {'Marshmellow', 'Hershey Bar', 'Graham Crackers'}
+# print(ingredientList1 - ingredientList2)
+# print(ingredientList1.difference(ingredientList2))
+
+# combine 2 sets:
+# combinedList = ingredientList1.union(ingredientList2)
+# print(combinedList)
+
+# intersectionList = ingredientList1.intersection(ingredientList2)
+# print(intersectionList)
+
+# -------------------FUNCTIONS-------------------
+# functions-always returns something. Default return will always be None
+
+# import netmiko #3rd party
+
+# print("argument") #built-in
+
+# Custom
+# def function1(argument1):
+#     print(argument1)
+
+
+# function1("team fox")
+
+# Bank account
+bankAccount = 0.0
+
+# def deposit(argument1):
+#     global bankAccount
+#     bankAccount = bankAccount + argument1
+#     print(bankAccount)
+
+# def withdraw(argument):
+#     global bankAccount
+#     bankAccount = bankAccount - argument
+#     print(bankAccount)
+
+# deposit(140)
+# withdraw(70)
+# withdraw(30)
+
+# def addValues(argument1, argument2):
+#     sumVar = argument1 + argument2
+#     print(sumVar)
+
+# def subtractValues(argument1, argument2):
+#     diffVar = argument1 - argument2
+#     print(diffVar)
+
+# addValues(55,23)
+
+# Name Generator
+# from random import randrange
+
+# firstName = ['adam', 'Becky','Charlie', 'Eggbert', 'Fransine' ]
+# lastName = ['Adams', 'Becker', 'Chara', 'Davenport', 'Eggelkrout', 'Franco']
+
+# print(randrange(6))
+
+# def randomName():
+#     firstName = ['adam', 'Becky', 'Charlie', 'Eggbert', 'Fransine']
+#     lastName = ['Adams', 'Becker', 'Chara', 'Davenport', 'Eggelkrout', 'Franco']
+
+#     print(f"{firstName[randrange(6)]} {lastName[randrange(6)]}")
+
+# randomName()
+
+# A better way to do the above function:
+
+# firstName = ['adam', 'Becky', 'Charlie', 'Eggbert', 'Fransine']
+# lastName = ['Adams', 'Becker', 'Chara','Davenport', 'Eggelkrout', 'Franco']
+
+# def randomName(argument1, argument2):
+
+
+#     print(f"{argument1[randrange(6)]} {argument2[randrange(6)]}")
+
+
+# randomName(firstName, lastName)
