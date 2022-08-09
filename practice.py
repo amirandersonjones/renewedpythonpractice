@@ -287,12 +287,12 @@
 # print(student2.grade)
 
 
-animalDict = {
-    "name": "Hope",
-            "species": "dog",
-            "habitat": "house",
-            "age": 1
-}
+# animalDict = {
+#     "name": "Hope",
+#             "species": "dog",
+#             "habitat": "house",
+#             "age": 1
+# }
 
 # print(animalDict.keys())
 
@@ -408,7 +408,7 @@ animalDict = {
 # function1("team fox")
 
 # Bank account
-bankAccount = 0.0
+# bankAccount = 0.0
 
 # def deposit(argument1):
 #     global bankAccount
@@ -462,3 +462,269 @@ bankAccount = 0.0
 
 
 # randomName(firstName, lastName)
+
+
+# -----------VARIABLE LENGTH ARGUMENTS---------------
+
+# def addingNumbers(*number):
+#     sum = 0
+#     for n in number:
+#         sum = sum + n
+#     print(sum)
+
+# addingNumbers(3,4,5,6)
+
+# ---------------KEYWORD ARGUMENTS = KWARGS--------------------
+# def printArguments(*args):
+#     for argument in args:
+#         print(f"Argument {argument} was passed in")
+
+# printArguments("dominic", "simonetti")
+
+# def printArguments(**kwargs): #defines the function with the special character kwargs
+#     for key, value in kwargs.items(): #seperates key-values into key/value categories using the .items()
+#         print(f"Argument key is {key} was passed in with the value {value}")
+
+# printArguments(firstName="dominic", lastName="simonetti")
+
+# ---------------INTRODUCTION TO MODULES------------
+
+# from random import randrange
+
+# import sys
+# print(sys.path)
+
+# sysList=sys.path
+# for path in sysList:
+#     print(path)
+
+# 3 places to find libraries you can download from python:
+# 1.) standard library
+# 2.) third party (pip)
+# 3.) local imports (files we wrote and import from our own machine to use in our code.)
+
+# for i in range(10):
+#     print(i)
+
+# from random import randrange
+
+# randomNumber = randrange(11)
+# print(randomNumber)
+
+# ------------RETURNING MULTIPLE VALUES----------
+
+# def basicMath(argument1, argument2):
+#     addedMath = argument1 + argument2
+#     multipliedMath = argument1 * argument2
+#     subtractMath = argument1 - argument2
+
+#     return addedMath, multipliedMath, subtractMath
+
+# print(basicMath(7, 5))
+
+
+# x,y,z = basicMath(7,5)
+# print(x)
+# print(y)
+# print(z)
+
+# ---------SCOPE------------
+# 1.) Enclosing-functions inside of Functions(inner function)
+# 2.) Built-in- available to use anywhere in python
+# 3.) Local scope- available inside of the function/local to the function.idented inside of function
+# 4.) Global-defined outside of a function.not available inside of the function unless called into it.
+
+# -------------FUNCTIONAL PROGRAMMING-------------
+# -Python is known as an object oriented programming language
+# -objects have properties and methods
+# -methods change the object(use the . to change for example name.lower() is a method)
+# -Functional programming is for our use of functions
+
+# ------------------COMPREHENSIONS------------------
+# groceryList = ["kwickade", "kwickice", "Monster", "kwickpizza", "Ellisworth Cheese Curds"]
+# kwickList = []
+
+# for groceryitem in groceryList:
+#     if groceryitem.startswith("kwick"):
+#         kwickList.append(groceryitem)
+# print(kwickList)
+
+# structure= <nameofnewlist>[<list><iteration><conditional>]
+# kwickList = [groceryitem for groceryitem in groceryList if groceryitem.startswith("kwick")]
+# print(kwickList)
+
+# friendsList = ["Jeannette", "Kirby", "Brown", "Jace", "Jerry", "Jack", "Queen"]
+# jfriendList = []
+
+# for friend in friendsList:
+#     if friend.startswith("J"):
+#         jfriendList.append(friend)
+# print(jfriendList)
+
+# jfriendlist=[friend for friend in friendsList if friend.startswith("J")]
+# print(jfriendlist)
+
+# numberslist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# newlist = []
+# for num in numberslist:
+#     if num % 2 == 0:
+#         newlist.append(num)
+# print(newlist)
+
+# newlist = [num for num in numberslist if num % 2 == 0]
+# print(newlist)
+
+# ------------------KEY:VALUE COMPREHENSIONS------------------
+
+# ageList = {"Jeremy":26, "Beth":19, "Michael":24, "Andy":20, "Danny":26}
+
+# legalDrinking = {key:value for (key, value) in ageList.items() if value > 21}
+# print(legalDrinking)
+
+
+# ------------------LAMBDA FUNCTIONS------------------
+# 1.) Intent is to be used only once and keep code short!
+# 2.) Single line code.
+# 3.) Lambda functions do not have to be name(so they are called anonymous functions).
+# 4.) Regular functions return None by default but Lambda functions return @ least one value.
+
+# def basicadd(argument1, argument2):
+#     sum = argument1 + argument2
+#     return sum
+
+# answer = basicadd(5, 7)
+# print(answer)
+
+# addUp = lambda argument1, argument2: argument1 + argument2
+# print(addUp(5,7))
+
+# exponential = lambda x: x**2
+# print(exponential(8))
+
+# exponential = lambda x, y=2: x ** y
+# print(exponential(9))
+# print(exponential(9, 3))
+
+# def canDrink(argument1):
+#     if argument1 > 20:
+#         print("You can drink")
+#     else:
+#         print("You are not of legal age to drink!")
+
+# canDrink(21)
+
+# reachAge = lambda age: "you can drink" if age > 20 else "you cannot drink"
+# print(reachAge(21))
+
+
+# ------------------MAP FUNCTIONS------------------
+# 1.) The map function takes in 2 arguments
+# 2.) The first argument is the function you want to use and the second it what you want it to iterate on.
+
+# numberList = [1, 2, 3, 4, 5]
+
+# def cubed(argument1):
+#     return argument1 ** 3
+
+# print(cubed(5))
+
+# newnumberList = map(cubed, numberList)
+# print(newnumberList)
+# print(list(newnumberList))
+
+# numberList = [1, 2, 3, 4, 5]
+# newNumberList = list(map(lambda x: x ** 3, numberList))
+# print(newNumberList)
+
+# friendList = ["Jeannette", "Kirby", "brown", "jace", "Jerry", "Jack", "Queen"]
+# newNameList = list(map(lambda name: name.capitalize(), friendList))
+# print(newNameList)
+
+# numberslist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# newlist = []
+# for num in numberslist:
+#     if num % 2 == 0:
+#         newlist.append(num)
+# print(newlist)
+
+# newlist = [num for num in numberslist if num % 2 == 0]
+# print(newlist)
+
+# agedict = {"Jeremy":26, "Beth":19, "Michael":24, "Andy":20, "Danny":26}
+# # for key, value in agedict.items():
+# #     print(key, value)
+
+# newdict = {key:value for key, value in agedict.items() if value > 21}
+# print(newdict)
+
+# timesTwo = lambda x: x * 2
+# print(timesTwo(4))
+# def timesTwo(argument1):
+#     print(argument1 * 2)
+
+# numberList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# print(list(map(timesTwo, numberList)))
+
+
+# ------------------TEXT FILES------------------
+# help(open)
+# textfile = open('textfile.txt')
+# print(textfile)
+# textfile.close()
+
+# AUTOMATICALLY OPEN AND CLOSE FILE
+# with open('textfile.txt') as f:
+#     print("Test")
+
+# with open('textfile.txt') as f:
+#     output = f.read()
+# print(output)
+
+# with open('textfile.txt') as f:
+#     output1 = f.readline()
+#     print(output1)
+
+# with open('textfile.txt') as f:
+#     output1 = f.readline()
+#     print(output1)
+#     output1 = f.readline()
+#     print(output1)
+
+# with open('textfile.txt') as f:
+#     output1 = f.readlines()
+#     print(output1)
+
+#     print(output1[1])
+
+# with open('textfile.txt', 'w') as f:
+#     # vaName = 'Amir'
+#     # f.write(vaName)
+#     f.write('Amir\nJones')
+#     # f.write('Jones')
+
+# with open('textfile.txt', 'w') as f:
+#     friendList = ["Jeannette\n", "Kirby\n", "brown\n","jace\n", "Jerry\n", "Jack\n", "Queen"]
+#     f.writelines(friendList)
+
+# with open('textfile.txt', 'r') as old, open('newtextfile.txt', 'w') as new:
+#     text = old.readlines()
+#     for line in text:
+#         new.write(line.upper())
+
+# with open('textfile.txt', 'a') as f:
+#     f.write("\nNew Text")
+
+# ------------------Pulling and Writing Files------------------
+# import netmiko
+
+# with open('ciscoConfigs.txt', 'w') as f:
+
+#     connection = netmiko.ConnectHandler(
+#         ip = 'sandbox-iosxe-latest-1.cisco.com',
+#         device_type = 'cisco_xe',
+#         username = 'developer',
+#         password = 'C1sco12345'
+#     )
+
+#     f.write(connection.send_command("show run"))
