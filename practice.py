@@ -728,4 +728,34 @@
 #     )
 
 #     f.write(connection.send_command("show run"))
-adfad
+
+# ------------GITHUB COMMANDS--------------
+
+# git checkout {file number}-goes back to the file before current head
+# (git switch -) -will switch back from the git checkout or git checkout {file number}
+# git dif- will show changes that have been added to file
+# git log- will show the log of commits
+# git log --oneline- will show a shortened version of commit history
+# git diff {first file} {second file}- shows the difference between two files. git log-will show you the numbers to put in.
+# git status- shows the status of current commits
+# git commit --ammend
+
+# ------------OBJECT ORIENTED PROGRAMMING--------------
+#An object = something like a person
+#An object has properties to it such as height, weight, color, = ATTRIBUTES
+#Objects can also have things they do = METHODS
+
+# class PartyAnimal:
+#     x = 0
+#     def party(self):
+#         self.x = self.x + 1
+#         print("So far", self.x)
+
+# an = PartyAnimal()
+# an.party()
+# an.party()
+# an.party()
+
+# print(dir(an))
+
+
