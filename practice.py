@@ -758,4 +758,204 @@
 
 # print(dir(an))
 
+# ---PRIVATE METHODS IN OBJECT ORIENTED PROGRAMMING--------
+# import random
 
+# class RandomPerson:
+#     _hairColor = ["Blonde", "Black", "Brown", "Red"]
+#     _eyeColor = ["Borwn", "Blue", "Green", "Black"]
+
+#     def __init__(self, name):
+#         self.name = name
+    
+#     def spawn(self):
+#         randomHair = random.choice(self.hairColor)
+#         randomEyes = random.choice(self.eyeColor)
+
+#         creation = f"{self.name} has {randomHair} colored hair, and {randomEyes} colored eyes"
+#         return creation
+    
+
+# ---DECORATORS IN OBJECT ORIENTED PROGRAMMING--------
+
+# A decorator is a design pattern in python that allows a user to add new functionality to an existing object without modifying its structure. Decorators are usually called before the definition of a function you want to decorate.
+
+# can be used to modify old/legacy code without modifying the old code.
+
+# class Person:
+#     def __init__(self, eyeColor, hairColor):
+#         self._eyeColor = eyeColor
+#         self._hairColor = hairColor
+    
+#     @property #called a getter, also when we want to print this function now we do not have to use call()
+#     def eyeColor(self):
+#         return self._eyeColor
+    
+#     @property #called a getter
+#     def hairColor(self):
+#         return self._hairColor
+    
+#     @eyeColor.setter
+#     def eyeColor(self, eyeColor):
+#         if eyeColor == "Red" or "red":
+#             raise ValueError("Red is not acceptable an an eye color")
+#         self.eyeColor = eyeColor
+
+#     @hairColor.setter
+#     def hairColor(self, hairColor):
+#         if hairColor == "Red" or "red":
+#             raise ValueError("Hair color cannot be set to Red")
+#         self.hairColor = hairColor
+
+
+
+
+# michael= Person("Brown", "Black")
+# # print(michael.eyeColor)
+# # print(michael.hairColor)
+
+# # michael.hairColor = "red"
+# print(michael.eyeColor)
+# print(michael.hairColor)
+
+# ---STATIC METHODS IN OBJECT ORIENTED PROGRAMMING--------
+# import random
+# hairColor = ["Blonde", "Black", "Brown", "Red"]
+
+# class Person:
+#     def __init__(self, hColor):
+#         self._hairColor = hColor
+    
+#     @property
+#     def hColor(self):
+#         return self._hairColor
+    
+#     @staticmethod
+#     def randomHair():
+#         return Person(random.choice(hairColor))
+
+# rando = Person.randomHair()
+# print(rando.hColor)
+
+# ---CLASS METHODS IN OBJECT ORIENTED PROGRAMMING--------
+
+# class FoodPreference:
+#     def __init__(self, foodType):
+#         self.preference = foodType
+    
+#     @classmethod
+#     def indian(clss):
+#         return(["Curry", "Tandoori Chicken", "Masala"])
+    
+#     @classmethod
+#     def mexican(clss):
+#         return(["Huevos Rancheros", "Tacos", "Burritos"])
+    
+#     @classmethod
+#     def italian(clss):
+#         return(["Ravioli", "Carbonaro", "Alfredo"])
+
+# Amir = FoodPreference.italian()
+
+# Kellie = FoodPreference.mexican()
+
+# Queen = FoodPreference.indian()
+
+# print(Amir)
+# print(Kellie)
+# print(Queen)
+
+# ---INHERITANCE IN OBJECT ORIENTED PROGRAMMING--------
+# from unicodedata import name
+
+
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+#     def testReturn(self):
+#         return "This is a test string"
+
+# class NetEngineer(Person):
+#     def __init__(self, name, age):
+#         super().__init__(name, age)
+
+#     def response(self):
+#         return "I am a network Engineer"
+
+# jeremy = NetEngineer('Jeremy', 68)
+# print(jeremy.response())
+# print(jeremy.testReturn())
+
+# amir = Person("Amir", 25)
+# print(amir.response())
+# print(amir.testReturn())
+
+# class Payment:
+#     def __init__(self, wage, bonus):
+#         self.wage = wage
+#         self.bonus = bonus
+    
+#     def income(self):
+#         return (self.wage*26) + self.bonus
+
+# class Person:
+#     def __init__(self, name, height, wage, bonus):
+#         self.name = name
+#         self.height = height
+#         self.payments = Payment(wage, bonus)
+
+#     def yearlyWage(self):
+#         return self.payments.income()   
+
+
+# erin = Person("Erin", 183, 1000, 500)
+# salary = erin.yearlyWage()
+# print(salary)
+
+# --------------------------TEMPLATING------------------------
+# Used for variable substitution, looping, conditional logic, filtering and replacing
+# Usually used for legacy devices
+# pip install jinja2
+# pip instll pyyaml
+
+
+# --------------------------YAML-----------------------
+# data serialization format
+# Easier to read and write than XML
+# white spaces are important
+# --- indicates the start of a YAML file
+#key: value (must put a space before the value)
+# pip install rich
+
+
+# import yaml
+# from rich import print as richPrint
+
+# # def pollYaml():
+
+# #     configuration = yaml.safe_load(open(r"C:\Users\amira\Documents\csspractice\yamlExample.yaml"))
+# #     richPrint(configuration)
+
+# # pollYaml()
+
+
+# def pollYaml():
+
+#     configuration = yaml.safe_load(open(r"C:\Users\amira\Documents\csspractice\yamlExample.yaml"))
+#     bgp = configuration["BGP"]
+#     peers = bgp['peers']
+
+#     for peer in peers:
+#         neighbor = peer['neighbor']
+#         asNumber = peer['peer_asn']
+        
+#         print(f"Neighbor is {neighbor} and the AS Number is {asNumber}")
+    
+    
+    
+#     richPrint(bgp)
+
+
+# pollYaml()
